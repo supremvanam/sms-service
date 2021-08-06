@@ -12,6 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+// Team Members:
+// Suprem Gnanadeep Stitha Pragna Vanam (301177430)
+// Rushitaben Shaileshbhai Patel (301178024)
+
 public class MainActivity extends AppCompatActivity {
     private static final int SMS_RECEIVE_PERMISSION_REQUEST = 1;
 

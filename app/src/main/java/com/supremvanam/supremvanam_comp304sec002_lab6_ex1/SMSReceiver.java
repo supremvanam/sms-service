@@ -8,6 +8,10 @@ import android.telephony.SmsMessage;
 import android.util.Log;
 import android.widget.Toast;
 
+// Team Members:
+// Suprem Gnanadeep Stitha Pragna Vanam (301177430)
+// Rushitaben Shaileshbhai Patel (301178024)
+
 public class SMSReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
