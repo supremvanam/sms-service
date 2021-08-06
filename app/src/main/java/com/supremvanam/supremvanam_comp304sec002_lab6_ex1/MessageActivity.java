@@ -165,7 +165,6 @@ public class MessageActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         //---unregister the receiver---
         unregisterReceiver(intentReceiver);
     }
@@ -186,6 +185,4 @@ public class MessageActivity extends AppCompatActivity {
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, sentPI, deliveredPI);
     }
-
-
 }

@@ -3,7 +3,6 @@ package com.supremvanam.supremvanam_comp304sec002_lab6_ex1;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.provider.Telephony;
 import android.telephony.SmsMessage;
 import android.util.Log;
@@ -26,20 +25,12 @@ public class SMSReceiver extends BroadcastReceiver {
 
             }
             Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
-
         }
 
         Log.d("SMSReceiver", str);
 
-        //---stop the SMS message from being broadcasted---
+        //---stop the SMS message from broadcasting---
         this.abortBroadcast();
-
-        //---launch the SMSActivity---
-        /*
-        Intent mainActivityIntent = new Intent(context, MessageActivity.class);
-        mainActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(mainActivityIntent);
-        */
 
         //---send a broadcast intent to update the SMS received in the activity---
         Intent broadcastIntent = new Intent();
