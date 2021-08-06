@@ -60,13 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 // Show Alert
                 intent.putExtra("contactName",item);
                 startActivity(intent);
-
             }
-
         });
-
-
     }
-
-
 }

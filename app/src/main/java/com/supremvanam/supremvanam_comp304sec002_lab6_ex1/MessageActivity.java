@@ -88,7 +88,6 @@ public class MessageActivity extends AppCompatActivity {
         //---register the receiver---
         registerReceiver(intentReceiver, intentFilter);
         //
-
     }
     //
     @Override
